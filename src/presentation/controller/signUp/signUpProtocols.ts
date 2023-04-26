@@ -1,3 +1,3 @@
 export type { AccountModel } from '../../../domain/models'
-export * from '../../../domain/usecases/AddAccount'
-export type { EmailValidator } from '../../protocols/emailValidator'
+export type { AddAccount, AddAccountModel } from '../../../domain/usecases'
+export * from '../../protocols'

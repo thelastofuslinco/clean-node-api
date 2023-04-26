@@ -1,12 +1,12 @@
-import type { AddAccount } from '../../../domain/usecases/AddAccount'
 import { InvalidParamError, MissingParamError } from '../../errors'
 import { badRequest, serverError, ok } from '../../helpers'
 import type {
   Controller,
   EmailValidator,
   HttpRequest,
-  HttpResponse
-} from '../../protocols'
+  HttpResponse,
+  AddAccount
+} from './signUpProtocols'
 
 interface SignUpControllerConstructor {
   emailValidator: EmailValidator
