@@ -39,6 +39,7 @@ const makeSut = (): SutTypes => {
   const sut = new DbAddAccount(encrypterStub, addAccountRepositoryStub)
   return { sut, encrypterStub, addAccountRepositoryStub }
 }
+
 describe('DbAddAccount usecases', () => {
   test('Should call Encrypter with right password', async () => {
     const { sut, encrypterStub } = makeSut()
